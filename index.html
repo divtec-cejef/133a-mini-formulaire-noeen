@@ -26,8 +26,10 @@
 <form action="https://kode.ch/getpost/" method="post">
     <ul>
         <li>
+            <label for="bg">Changer l'arrière-plan</label>
             <select name="bg" id="bg">
-                <option value="1.jpg">Arrière-plan 1</option>
+                <!-- option[value="$ -->
+                <option value="1.jpg" selected>Arrière-plan 1</option>
                 <option value="2.jpg">Arrière-plan 2</option>
                 <option value="3.jpg">Arrière-plan 3</option>
                 <option value="4.jpg">Arrière-plan 4</option>
@@ -43,7 +45,7 @@
             <fieldset>
                 <legend>Genre</legend>
                 <label>
-                    <input type="radio" name="genre" value="F">
+                    <input type="radio" name="genre" value="F" required>
                     <span>Femme</span>
                 </label>
                 <label>
@@ -51,7 +53,7 @@
                     <span>Homme</span>
                 </label>
                 <label>
-                    <input type="radio" name="genre" value="N">
+                    <input type="radio" name="genre" value="N" checked>
                     <span>Ne se prononce pas</span>
                 </label>
             </fieldset>
